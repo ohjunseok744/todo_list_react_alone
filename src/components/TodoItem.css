@@ -1,0 +1,41 @@
+.todo-item {
+  display: flex; /* 요소들을 가로로 일렬로 배치 */
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+.todo-item > .content{
+  flex: 1;
+}
+.todo-item > p{
+  margin-right: 10px;
+}
+.todo-item input[type="checkbox"] {
+  margin-right: 10px; /* 체크박스와 내용 사이의 간격 조절 */
+  
+  
+
+}
+.todo-item button {
+  padding: 6px 10px; /* 버튼 내부 여백 설정 */
+  font-size: 14px; /* 버튼 텍스트 크기 설정 */
+  background-color: #007bff; /* 배경색 설정 */
+  color: #fff; /* 텍스트 색상 설정 */
+  border: none; /* 테두리 제거 */
+  border-radius: 4px; /* 모서리를 둥글게 만듦 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+  transition: background-color 0.3s; /* 배경색 변화를 부드럽게 하기 위한 트랜지션 */
+  height: 30px;
+  
+}
+
+.todo-item button:hover {
+  background-color: #0056b3; /* 마우스 호버시 배경색 변경 */
+}
+.todo-item.is_done .content {
+  filter: blur(0.5px); /* 흐림 효과 */
+  text-decoration:line-through;
+}

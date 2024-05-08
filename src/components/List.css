@@ -1,0 +1,25 @@
+.container > h3{
+  font-size: 20px;
+  margin-top: 100px;
+  color: #007bff;
+}
+.search{
+  color:#007bff;
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.search:focus {
+  border-bottom-color:#007bff; /* 마우스 호버시 밑줄 강조 */
+  outline: none;
+}
+.search:focus::placeholder {
+  color: #007bff; /* 플레이스홀더 색상 변경 */
+}
